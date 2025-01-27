@@ -1,0 +1,111 @@
+/* General Page Style */
+body {
+  font-family: "JetBrains Mono", sans-serif;
+  /*background: radial-gradient(circle, #1d0134, #000000);*/
+  position: relative;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  height: 100vh;
+  background: url("/assets/NoTactics.gif") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Espaciado y Estilo del Header */
+header {
+  top: 0;
+  z-index: 10;
+}
+
+header img {
+  max-width: 200px; /* Hacemos el logo más visible */
+  filter: drop-shadow(0 0 8px #a45ee5);
+}
+
+/* Contenedor de Búsqueda */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Espacio entre los elementos */
+  margin-top: 20px;
+}
+
+.search-bar input[type="text"] {
+  width: 20%;
+  max-width: 500px; /* Limita el ancho en pantallas grandes */
+  padding: 12px 20px;
+  border: 2px solid #4c1c79;
+  border-radius: 50px;
+  font-size: 1rem;
+  color: #000000;
+  background: #ffffff;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  filter: drop-shadow(0 0 8px #a45ee5);
+}
+
+.search-bar input[type="text"]:focus {
+  border-color: #ffffff;
+  outline: none;
+  box-shadow: 0 0 8px #a45ee5;
+}
+
+/* Table Styling */
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: rgba(28, 0, 50, 0.9);
+  z-index: 1;
+  color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+th,
+td {
+  padding: 15px 10px;
+  text-align: left;
+}
+
+th {
+  background: #9100cf;
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-shadow: 0 0 5px #000000;
+  cursor: pointer;
+  width: 25%;
+}
+
+tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+tr:hover {
+  background: rgba(164, 94, 229, 0.2);
+  transition: background 0.3s ease;
+}
+
+td a {
+  color: #a45ee5;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+td a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px #a45ee5;
+}
+
+/* Footer */
+footer {
+  background: #1d0134;
+  padding: 20px;
+  color: #a45ee5;
+  font-size: 0.9rem;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+}

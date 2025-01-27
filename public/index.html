@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <title class="title">No Tactics</title>
+    <link rel="stylesheet" href="/public/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="/assets/logo.png" alt="Guild Logo" />
+    </header>
+
+    <div class="container">
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Nombre del baboso" />
+      </div>
+
+      <div class="test">
+        <table id="dkpTable">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>DKP</th>
+              <th>DKP Total</th>
+              <th>DKP Gastado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Los datos se cargarán aquí dinámicamente -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Contenedor donde se mostrarán los registros del jugador -->
+    <div id="log" style="margin-top: 20px"></div>
+
+    <script src="/public/app.js"></script>
+  </body>
+</html>
