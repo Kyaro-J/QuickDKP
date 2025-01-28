@@ -1,3 +1,4 @@
+window.location.href = window.location.href;
 // Función para cargar los registros de los jugadores desde los archivos
 async function loadDataFromFile(filePath) {
   try {
