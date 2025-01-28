@@ -1,4 +1,3 @@
-window.location.href = window.location.href;
 // Función para cargar los registros de los jugadores desde los archivos
 async function loadDataFromFile(filePath) {
   try {
@@ -23,6 +22,7 @@ async function loadDKPData() {
       }
     });
   }
+  window.location.href = window.location.href;
 }
 
 // Parsear los datos HTML y obtener las filas
