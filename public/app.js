@@ -22,7 +22,6 @@ async function loadDKPData() {
       }
     });
   }
-  window.location.href = window.location.href;
 }
 
 // Parsear los datos HTML y obtener las filas
