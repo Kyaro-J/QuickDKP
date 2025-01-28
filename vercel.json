@@ -10,33 +10,30 @@
       "use": "@vercel/static"
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/assets/(.*)",
-      "dest": "/assets/$1"
+      "source": "/assets/(.*)",
+      "destination": "/assets/$1"
     },
     {
-      "src": "/uploads/(.*)",
-      "dest": "/uploads/$1"
+      "source": "/uploads/(.*)",
+      "destination": "/uploads/$1"
     },
     {
-      "src": "/style.css",
-      "dest": "/public/style.css"
+      "source": "/style.css",
+      "destination": "/public/style.css"
     },
     {
-      "src": "/app.js",
-      "dest": "/public/app.js"
+      "source": "/app.js",
+      "destination": "/public/app.js"
     },
     {
-      "src": "/favicon.ico",
-      "dest": "/assets/favicon.ico"
+      "source": "/favicon.ico",
+      "destination": "/assets/favicon.ico"
     },
     {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/server.js"
+      "source": "/(.*)",
+      "destination": "/server.js"
     }
   ],
   "headers": [
