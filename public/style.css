@@ -30,7 +30,7 @@ header img {
   justify-content: center;
   align-items: center;
   gap: 10px; /* Espacio entre los elementos */
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .search-bar input[type="text"] {
